@@ -6,7 +6,7 @@ int main(void){
     DDRD |= 0xC0;        // D6, D7 pines de control del motor
     PORTD &= ~(0xC0);    // motor apagado
     DDRD &= ~(0x20);     // D5 pulsador
-    PORTD |= 0x20;       // pull up de D5
+    PORTD |= 0x20;       // pull up de D5 en este caso
 
     char flag = 0;
 
